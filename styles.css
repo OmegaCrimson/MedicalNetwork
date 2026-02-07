@@ -127,15 +127,18 @@ section {
 }
 
 .table-wrapper {
-    /* Prevent horizontal scrolling by hiding overflow-x; content will wrap vertically */
-    overflow-x: hidden;
-    /* Provide vertical scroll when content is long */
-    overflow-y: auto;
+    /* Allow horizontal scrolling when table is wider than viewport */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Keep vertical flow natural (no forced vertical scroll) */
+    overflow-y: visible;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    /* Use auto layout to allow columns to size naturally when scrolling */
+    table-layout: auto;
 }
 
 thead {
