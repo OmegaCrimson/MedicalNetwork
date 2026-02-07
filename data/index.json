@@ -1,0 +1,37 @@
+[
+    {
+        "name": "المستشفيات",
+        "target": "hospitals.html",
+        "logo": "hospital.svg"
+    },
+    {
+        "name": "معامل التحاليل الطبية",
+        "target": "labs.html",
+        "logo": "lab.svg"
+    },
+    {
+        "name": "عيادات العلاج الطبيعي",
+        "target": "therapy.html",
+        "logo": "home_care.svg"
+    },
+    {
+        "name": "الصيدليات",
+        "target": "pharmacies.html",
+        "logo": "pharmacy.svg"
+    },
+    {
+        "name": "محلات البصريات",
+        "target": "optics.html",
+        "logo": "optics.svg"
+    },
+    {
+        "name": "مراكز الأشعة",
+        "target": "scans.html",
+        "logo": "scan.svg"
+    },
+    {
+        "name": "المراكز الطبية",
+        "target": "clinics.html",
+        "logo": "clinic.svg"
+    }
+]
