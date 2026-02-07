@@ -34,7 +34,7 @@ async function loadCategoryData(category) {
 async function loadIndex() {
     try {
         // 1. Fetch the JSON file based on the page category
-        const response = await fetch(`../data/index.json`);
+        const response = await fetch(`./data/index.json`);
         const data = await response.json();
 
         const container = document.querySelector(`#index-nav`);
