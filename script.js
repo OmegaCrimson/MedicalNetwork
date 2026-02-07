@@ -1,7 +1,10 @@
 async function loadCategoryData(category) {
     try {
-        // 1. Fetch the JSON file based on the page category
-        const response = await fetch(`../data/${category}.json`);
+        // Get the base path, handling GitHub Pages URLs like /repo-name/
+        const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/pages/'));
+        const dataPath = `${basePath}/data/${category}.json`;
+        
+        const response = await fetch(dataPath);
         const data = await response.json();
 
         const container = document.querySelector(`#${category}-tbody`);
@@ -13,7 +16,7 @@ async function loadCategoryData(category) {
                 <td data-label="مسلسل">${index + 1}</td>
                 <td data-label="الجهة" class="name-cell">
                     <div class="logo-wrapper">
-                        <img src="../assets/logos/${item.logo}" alt="logo" class="logo">
+                        <img src="${basePath}/assets/logos/${item.logo}" alt="logo" class="logo">
                         <span>${item.name}</span>
                     </div>
                 </td>
@@ -33,18 +36,21 @@ async function loadCategoryData(category) {
 
 async function loadIndex() {
     try {
-        // 1. Fetch the JSON file based on the page category
-        const response = await fetch(`./data/index.json`);
+        // Get the base path, handling GitHub Pages URLs like /repo-name/
+        const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+        const dataPath = `${basePath}/data/index.json`;
+        
+        const response = await fetch(dataPath);
         const data = await response.json();
 
         const container = document.querySelector(`#index-nav`);
         if (!container) return;
 
-        // 2. Map and Inject
+        // 2. Map and Inject 
         container.innerHTML = data.map((item) => `
-            <a href="pages/${item.target}" class="flexy-item">
+            <a href="${basePath}/pages/${item.target}" class="flexy-item">
                 <figure>
-                    <img src="assets/icons/${item.logo}">
+                    <img src="${basePath}/assets/icons/${item.logo}">
                     <figurecaption>${item.name}</figurecaption>
                 </figure>
             </a>
@@ -53,31 +59,32 @@ async function loadIndex() {
         console.error("Failed to load medical data:", err);
     }
 }
-// Check which page we are on and load corresponding data
 function renderNetwork() {
-    if (window.location.pathname.includes('hospitals.html')) {
+    const pathname = window.location.pathname;
+    
+    if (pathname.includes('hospitals.html')) {
         loadCategoryData('hospitals');
     }
-    else if (window.location.pathname.includes('optics.html')) {
+    else if (pathname.includes('optics.html')) {
         loadCategoryData('optics');
     }
-    else if (window.location.pathname.includes('scans.html')) {
+    else if (pathname.includes('scans.html')) {
         loadCategoryData('scans');
     }
-    else if (window.location.pathname.includes('labs.html')) {
+    else if (pathname.includes('labs.html')) {
         loadCategoryData('labs');
     }
-    else if (window.location.pathname.includes('clinics.html')) {
+    else if (pathname.includes('clinics.html')) {
         loadCategoryData('clinics');
     }
-    else if (window.location.pathname.includes('therapy.html')) {
+    else if (pathname.includes('therapy.html')) {
         loadCategoryData('therapy');
     }
-    else if (window.location.pathname.includes('pharmacies.html')) {
+    else if (pathname.includes('pharmacies.html')) {
         loadCategoryData('pharmacies');
     }
-    // Add else-if blocks for pharmacies, labs, etc.
-    else if (window.location.pathname.includes('index.html')) {
+    else {
+        // Load index for root path or index.html
         loadIndex();
     }
 
