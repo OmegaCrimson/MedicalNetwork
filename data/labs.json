@@ -1,0 +1,44 @@
+[
+    {
+        "logo": "alamedlabs.webp",
+        "name": "معامل العميد",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "darelteblabs.webp",
+        "name": "معامل دار الطب",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "portolab.webp",
+        "name": "معامل بورتوﻻب",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "hassablabs.webp",
+        "name": "معامل حساب",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "radlab.webp",
+        "name": "معمل راد للتحاليل",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "betalabs.webp",
+        "name": "معامل بيتا",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    }
+]

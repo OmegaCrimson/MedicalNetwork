@@ -1,0 +1,92 @@
+[
+    {
+        "logo": "alsabhospital.webp",
+        "name": "مستشفى السبع التخصصي",
+        "address": "8 شارع مستشفى السبع من جمال عبد الناصر",
+        "phones": [
+            "5575984",
+            "5486826",
+            "01206099970"
+        ],
+        "discounts": [
+            "15%"
+        ]
+    },
+    {
+        "logo": "darelatabhospital.webp",
+        "name": "مستشفى دار الأطبة",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "nokhba.webp",
+        "name": "مركز النخبة الطبي",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "darelelaghospital.webp",
+        "name": "مستشفى دار العلاج",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "alemamhospital.webp",
+        "name": "مستشفى الإمام",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "okba.webp",
+        "name": "مستشفى عقبة بن نافع",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "alryada.webp",
+        "name": "مركز الريادة الطبي",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "elthagar.webp",
+        "name": "مستشفى الثغر",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "alsafwaroyal.webp",
+        "name": "مستشفى الصفوة رويال",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "mabaraasafrahospital.webp",
+        "name": "مستشفى مبرة العصافرة",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "tibahospital.webp",
+        "name": "مستشفى طيبة",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    },
+    {
+        "logo": "MDAshrafSC.webp",
+        "name": "مستشفى د. أشرف",
+        "address": "",
+        "phones": [],
+        "discounts": []
+    }
+]
