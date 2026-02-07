@@ -12,14 +12,12 @@
 * {
     box-sizing: border-box;
 }
-
 /* Make images responsive so they never force horizontal scroll */
 img, svg {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
 html, body {
     height: 100%;
 }
@@ -138,10 +136,6 @@ section {
 table {
     width: 100%;
     border-collapse: collapse;
-    /* Use fixed layout so long cells wrap instead of expanding table width */
-    table-layout: fixed;
-    word-break: break-word;
-    overflow-wrap: anywhere;
 }
 
 thead {
@@ -159,10 +153,6 @@ th {
 td {
     padding: 10px;
     border-bottom: 1px solid var(--border);
-    /* Allow long text/links to wrap to the next line instead of widening the cell */
-    word-break: break-word;
-    overflow-wrap: anywhere;
-    white-space: normal;
 }
 
 .logo-wrapper {
