@@ -54,42 +54,43 @@ async function loadIndex() {
     }
 }
 // Check which page we are on and load corresponding data
-if (window.location.pathname.includes('hospitals.html')) {
-    loadCategoryData('hospitals');
-}
-else if (window.location.pathname.includes('optics.html')) {
-    loadCategoryData('optics');
-}
-else if (window.location.pathname.includes('scans.html')) {
-    loadCategoryData('scans');
-}
-else if (window.location.pathname.includes('labs.html')) {
-    loadCategoryData('labs');
-}
-else if (window.location.pathname.includes('clinics.html')) {
-    loadCategoryData('clinics');
-}
-else if (window.location.pathname.includes('therapy.html')) {
-    loadCategoryData('therapy');
-}
-else if (window.location.pathname.includes('pharmacies.html')) {
-    loadCategoryData('pharmacies');
-}
-// Add else-if blocks for pharmacies, labs, etc.
-else if (window.location.pathname.includes('index.html')) {
-    loadIndex();
-}
+function renderNetwork() {
+    if (window.location.pathname.includes('hospitals.html')) {
+        loadCategoryData('hospitals');
+    }
+    else if (window.location.pathname.includes('optics.html')) {
+        loadCategoryData('optics');
+    }
+    else if (window.location.pathname.includes('scans.html')) {
+        loadCategoryData('scans');
+    }
+    else if (window.location.pathname.includes('labs.html')) {
+        loadCategoryData('labs');
+    }
+    else if (window.location.pathname.includes('clinics.html')) {
+        loadCategoryData('clinics');
+    }
+    else if (window.location.pathname.includes('therapy.html')) {
+        loadCategoryData('therapy');
+    }
+    else if (window.location.pathname.includes('pharmacies.html')) {
+        loadCategoryData('pharmacies');
+    }
+    // Add else-if blocks for pharmacies, labs, etc.
+    else if (window.location.pathname.includes('index.html')) {
+        loadIndex();
+    }
 
-// Search functionality filters across all tables simultaneously
-document.getElementById('searchBar')?.addEventListener('input', function(e) {
-    const term = e.target.value.toLowerCase();
-    const rows = document.querySelectorAll('tbody tr');
-    
-    rows.forEach(row => {
-        const text = row.innerText.toLowerCase();
-        row.style.display = text.includes(term) ? '' : 'none';
+    // Search functionality filters across all tables simultaneously
+    document.getElementById('searchBar')?.addEventListener('input', function (e) {
+        const term = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            row.style.display = text.includes(term) ? '' : 'none';
+        });
     });
-});
-
+}
 // Run rendering on page load
 window.onload = renderNetwork;
