@@ -161,6 +161,13 @@ td {
     gap: 10px;
 }
 
+.logo-wrapper span {
+    /* allow text inside the logo wrapper to wrap and shrink */
+    flex: 1 1 auto;
+    min-width: 0;
+    word-break: break-word;
+}
+
 .logo {
     width: 40px;
     height: auto;
@@ -191,6 +198,7 @@ td {
     border-radius: 4px;
     margin: 2px 2px 2px 0;
     font-size: 0.8rem;
+    white-space: normal;
 }
 
 .phone-link:active {
@@ -207,6 +215,7 @@ td {
     font-size: 0.75rem;
     font-weight: bold;
     border: 1px solid #bbf7d0;
+    white-space: normal;
 }
 
 tr {
@@ -214,7 +223,8 @@ tr {
     border: 1px solid var(--border);
     margin-bottom: 15px;
     border-radius: 8px;
-    overflow: hidden;
+    /* allow content to overflow/wrap instead of being clipped */
+    overflow: visible;
     background: white;
 }
 
@@ -225,6 +235,9 @@ td {
     padding: 10px;
     border-bottom: 1px solid var(--bg);
     gap: 8px;
+    /* allow children to wrap to next line instead of expanding the cell */
+    flex-wrap: wrap;
+    min-width: 0; /* allow flex children to shrink */
 }
 
 td:last-child {
