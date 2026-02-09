@@ -2,22 +2,22 @@
     {
         "logo": "elnouroptics.webp",
         "name": "النور للنظارات",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "جميع الفروع بالاسكندرية",
+        "phones": ["01271010177"],
+        "discounts": ["20% نظارات طبية و شمس"]
     },
     {
         "logo": "brandoptics.webp",
         "name": "براند للبصريات",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "جميع الفروع بالاسكندرية",
+        "phones": ["01281488800"],
+        "discounts": ["30% نظارات طبية و شمس"]
     },
     {
         "logo": "tudor.webp",
         "name": "تودور للبصريات",
-        "address": "",
+        "address": "جميع الفروع بالاسكندرية",
         "phones": [],
-        "discounts": []
+        "discounts": ["30% نظارات طبية و شمس"]
     }
 ]

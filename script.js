@@ -3,7 +3,7 @@ async function loadCategoryData(category) {
         // Get the base path, handling GitHub Pages URLs like /repo-name/
         const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/pages/'));
         const dataPath = `${basePath}/data/${category}.json`;
-        
+
         const response = await fetch(dataPath);
         const data = await response.json();
 
@@ -11,6 +11,7 @@ async function loadCategoryData(category) {
         if (!container) return;
 
         // 2. Map and Inject
+        
         container.innerHTML = data.map((item, index) => `
             <tr>
                 <td data-label="مسلسل">${index + 1}</td>
@@ -21,12 +22,18 @@ async function loadCategoryData(category) {
                     </div>
                 </td>
                 <td data-label="العنوان">${item.address}</td>
-                <td data-label="الخصومات">
-                    ${item.discounts.map(d => `<span class="badge">${d}</span>`).join('')}
-                </td>
-                <td data-label="التواصل">
-                    ${item.phones.map(p => `<a href="tel:${p}" class="phone-link">${p}</a>`).join('')}
-                </td>
+                ${item.discounts && item.discounts.length > 0
+                ? `<td data-label="الخصومات">
+                    ${item.discounts.map(d => `<span class="badge">${d}</span>`).join('')} 
+                    </td>`
+                : ''
+            }
+                ${item.phones && item.phones.length > 0
+                ? `<td data-label="التواصل">
+                        ${item.phones.map(p => `<a href="tel:${p}" class="phone-link">${p}</a>`).join('')}
+                    </td>`
+                : ''
+            }
             </tr>
         `).join('');
     } catch (err) {
@@ -39,7 +46,7 @@ async function loadIndex() {
         // Get the base path, handling GitHub Pages URLs like /repo-name/
         const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
         const dataPath = `${basePath}/data/index.json`;
-        
+
         const response = await fetch(dataPath);
         const data = await response.json();
 
@@ -61,7 +68,7 @@ async function loadIndex() {
 }
 function renderNetwork() {
     const pathname = window.location.pathname;
-    
+
     if (pathname.includes('hospitals.html')) {
         loadCategoryData('hospitals');
     }

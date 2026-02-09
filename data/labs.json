@@ -2,43 +2,50 @@
     {
         "logo": "alamedlabs.webp",
         "name": "معامل العميد",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "جميع الفروع بالاسكندرية",
+        "phones": ["01555527627","01113335857","035415299"],
+        "discounts": ["50%"]
     },
     {
         "logo": "darelteblabs.webp",
         "name": "معامل دار الطب",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "محطة الرمل: 54 شارع صفية زغلول أعلى صيدلية العزبي - مجمع عيادات ميديكو",
+        "phones": ["01023923106","01234511770"],
+        "discounts": ["50%"]
+    },
+    {
+        "logo": "darelteblabs.webp",
+        "name": "معامل دار الطب",
+        "address": "فرع الدخيلة: شارع طاهر الجزائري بجوار نقطةالسلام (القسم القديم)",
+        "phones": ["01023923106","01234511770"],
+        "discounts": ["50%"]
     },
     {
         "logo": "portolab.webp",
         "name": "معامل بورتوﻻب",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "جميع الفروع بالاسكندرية",
+        "phones": ["01211110543"],
+        "discounts": ["50%"]
     },
     {
         "logo": "hassablabs.webp",
         "name": "معامل حساب",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "جميع الفروع بالاسكندرية",
+        "phones": ["16987"],
+        "discounts": ["أسعار الوزارة"]
     },
     {
         "logo": "radlab.webp",
         "name": "معمل راد للتحاليل",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "جميع الفروع بالاسكندرية",
+        "phones": ["15866","01110335885"],
+        "discounts": ["30%"]
     },
     {
         "logo": "betalabs.webp",
         "name": "معامل بيتا",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "address": "ش 45 الرئيسي - ناصية ش 25 أعلى حلواني ابو عمر برج الخليل - العصافرة قبلي",
+        "phones": ["01066510526"],
+        "discounts": ["60%"]
     }
 ]
