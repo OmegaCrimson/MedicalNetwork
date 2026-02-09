@@ -33,5 +33,10 @@
         "name": "المراكز الطبية",
         "target": "clinics.html",
         "logo": "clinic.svg"
+    },
+    {
+        "name": "مراكز الأسنان",
+        "target": "dentists.html",
+        "logo": "dentist.svg"
     }
 ]

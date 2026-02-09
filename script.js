@@ -83,6 +83,9 @@ function renderNetwork() {
     else if (pathname.includes('pharmacies.html')) {
         loadCategoryData('pharmacies');
     }
+    else if (pathname.includes('dentists.html')) {
+        loadCategoryData('dentists');
+    }
     else {
         // Load index for root path or index.html
         loadIndex();
