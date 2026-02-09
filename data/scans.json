@@ -8,10 +8,24 @@
     },
     {
         "logo": "alhayahscan.webp",
-        "name": "مركز الحياة للأشعة",
-        "address": "",
-        "phones": [],
-        "discounts": []
+        "name": "الحياة سكان",
+        "address": "236 شارع بورسعيد - سبورتنج",
+        "phones": ["5413800","5413700"],
+        "discounts": ["20%"]
+    },
+    {
+        "logo": "alhayahscan.webp",
+        "name": "الحياة سكان",
+        "address": "187 شارع بورسعيد - سبورتنج",
+        "phones": ["5924714","5924761"],
+        "discounts": ["20%"]
+    },
+    {
+        "logo": "alhayahscan.webp",
+        "name": "الحياة سكان",
+        "address": "426 شارع مصطفى كامل - أمام سنترال مصطفى كامل - السيوف",
+        "phones": ["5255569","5255574"],
+        "discounts": ["20%"]
     },
     {
         "logo": "alglaascan.webp",
